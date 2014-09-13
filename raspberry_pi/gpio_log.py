@@ -1,12 +1,23 @@
+#!/usr/bin/python
 import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
 
-pin = 1 	#pin numbers to be changed later
+# Define function to measure charge time
+def RC_Analog (Pin):
+  counter = 0
+  # Discharge capacitor
+  GPIO.setup(Pin, GPIO.OUT)
+  GPIO.output(Pin, GPIO.LOW)
+  time.sleep(0.1)
+  GPIO.setup(Pin, GPIO.IN)
+  # Count loops until voltage across capacitor reads high on GPIO
+  while(GPIO.input(Pin)==GPIO.LOW):
+        counter =counter+1
+  return counter
 
-GPIO.setmode(GPIO.BOARD)	#use board numbering system
-GPIO.setup(pin, GPIO.I2C)	#I2C or SPI?
+# Main program loop
 
 while True:
-    #read 128 times per second
-    count = 0
-    while count < 128: #read from pin
-	
+  print RC_Analog(4) # Measure timing using GPIO4
+
