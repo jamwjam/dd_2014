@@ -1,11 +1,8 @@
-<!--
-To change this template use Tools | Templates.
--->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <?php include ('head.php'); ?>
-    <title>Toaster</title>
+    <title>Register</title>
 </head>
 <body>
 	<div id="wrapper">
@@ -17,7 +14,7 @@ To change this template use Tools | Templates.
                     <div class="col-md-4 col-md-offset-4">
                         <div class="login-panel">
                             <div class="panel-heading login-top">
-                                <h3 class="panel-title">Please sign in</h3>
+                                <h3 class="panel-title">Sign Up</h3>
                             </div>
                             <div>
                                 <form accept-charset="UTF-8" role="form">
@@ -28,13 +25,10 @@ To change this template use Tools | Templates.
                                         <div class="form-group">
                                             <input class="form-control" placeholder="Password" name="password" type="password" value="">
                                         </div>
-                                        <div class="checkbox login-remember">
-                                            <label>
-                                                <input name="remember" type="checkbox" value="Remember Me"> Remember Me
-                                            </label>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Confirm Password" name="conf_password" type="conf_password" value="">
                                         </div>
-                                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
-                                        <a href="register" class="btn btn-lg btn-success btn-block">Sign Up</a>
+                                        <input class="btn btn-lg btn-success btn-block" type="submit" value="Register">
                                     </fieldset>
                                 </form>
                             </div>
