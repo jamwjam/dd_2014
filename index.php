@@ -7,6 +7,7 @@ To change this template use Tools | Templates.
     <title></title>
 </head>
 <body>
-<h1>Hello World!</h1>
+    <h1>Hello World!</h1>
+    <a href="login">Login here</a>
 </body>
 </html>
