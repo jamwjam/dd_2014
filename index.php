@@ -7,7 +7,7 @@
     $mysql_password = "root"; 
 
     // Create connection 
-    $con=mysqli_connect($mysql_host,$mysql_database,$mysql_user,$mysql_password); 
+    $con=mysqli_connect($mysql_host,$mysql_user,$mysql_password,$mysql_database); 
 
     // Check connection 
     if (mysqli_connect_errno($con)) 
