@@ -28,6 +28,7 @@ body {
 #content {
 	padding:10px;
     padding-top: 50px;
+    min-height:600px;
 }
 #footer {
 	width:100%;
@@ -48,13 +49,6 @@ body {
 
 #container {
     max-width:1200px;
-}
-
-.center-content {
-    padding-top:100px;
-    color: white;
-    max-width:600px;
-    margin: 0 auto;
 }
 
 .login-panel {
@@ -80,17 +74,58 @@ body {
 }
 
 .left-well {
-    
-    position: absolute;
-    left: 0px;
-    top:60px;
+    padding:5px;
+    position: relative;
+    background: #333;
+    color: #ddd;
+    left: 10px;
+    top: 120px;
     max-width: 200px;
+    height: 400px;
+}
+
+
+.center-well {
+    padding-top: 50px;
+    color: white;
 }
 
 .right-well {
-    position: absolute;
-    right: 0px;
-    top:60px;
+    position: relative;
+    background: #333;
+    color: #ddd;
+    right:10px;
+    top: 120px;
     max-width: 200px;
+    height: 400px;
 }
 
+.user-nav {
+    
+}
+
+.user-nav > li > a {
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: left;
+}
+
+.user-nav > li > a:hover {
+    background: #666;
+}
+
+#site-title {
+    color: white;
+}
+
+.register-modal {
+    padding-top: 100px;
+}
+
+.register-btn{
+    margin-top: 20px;
+}
+
+.register-btn:focus{
+    outline:none;
+}
