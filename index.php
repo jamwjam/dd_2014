@@ -1,5 +1,14 @@
 <?php
     $logged = false;
+
+    $link = mysqli_connect("54.68.46.233","root","root", "Daemon","3306");
+    // Create a MySQL table in the selected database
+    mysql_query("CREATE TABLE example(
+    id INT NOT NULL AUTO_INCREMENT, 
+    PRIMARY KEY(id),
+     name VARCHAR(30), 
+     age INT)")
+     or die(mysql_error());  
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
