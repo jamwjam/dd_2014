@@ -14,6 +14,15 @@
     { 
         echo "Failed to connect to MySQL: " . mysqli_connect_error(); 
     } 
+    else 
+    {
+        mysql_query("CREATE TABLE example(
+        id INT NOT NULL AUTO_INCREMENT, 
+        PRIMARY KEY(id),
+         name VARCHAR(30), 
+         age INT)")
+         or die(mysql_error());  
+    }
 
 ?>
 
