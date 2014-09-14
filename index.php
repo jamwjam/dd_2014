@@ -1,32 +1,6 @@
 <?php
     $logged = false;
 
-    $mysql_host = "127.0.0.1"; 
-    $mysql_database = "Daemon"; 
-    $mysql_user = "root"; 
-    $mysql_password = "root"; 
-
-    // Create connection 
-    $con=mysqli_connect($mysql_host,$mysql_user,$mysql_password,$mysql_database); 
-
-    // Check connection 
-    if (mysqli_connect_errno($con)) 
-    { 
-        echo "Failed to connect to MySQL: " . mysqli_connect_error(); 
-    } 
-    else 
-    {
-        // Create table
-        $sql="CREATE TABLE Persons(FirstName CHAR(30),LastName CHAR(30),Age INT)";
-
-        // Execute query
-        if (mysqli_query($con,$sql)) {
-          echo "Table persons created successfully";
-        } else {
-          echo "Error creating table: " . mysqli_error($con);
-        }
-    }
-
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
