@@ -26,14 +26,15 @@
                 (
                 id INT NOT NULL AUTO_INCREMENT, 
                 PRIMARY KEY(id),
+                email VARCHAR(100),
                 username VARCHAR(100),
-                password VARCHAR(100),
+                password VARCHAR(100)
                 )";
             if (mysqli_query($con,$sql)) {
               echo "Database created successfully";
                 $success = true;
             } else {
-              echo "Error creating database: " . mysqli_error($con);
+              echo "Error creating table: " . mysqli_error($con);
             }
         }
         
