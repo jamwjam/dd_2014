@@ -1,14 +1,20 @@
 <?php
     $logged = false;
 
-    $link = mysqli_connect("ec2-54-68-46-233.us-west-2.compute.amazonaws.com","root","root", "Daemon","3306");
-    // Create a MySQL table in the selected database
-    mysql_query("CREATE TABLE example(
-    id INT NOT NULL AUTO_INCREMENT, 
-    PRIMARY KEY(id),
-     name VARCHAR(30), 
-     age INT)")
-     or die(mysql_error());  
+    $mysql_host = "http://ec2-54-68-46-233.us-west-2.compute.amazonaws.com/"; 
+    $mysql_database = ""Daemon"; 
+    $mysql_user = "root"; 
+    $mysql_password = "root"; 
+
+    // Create connection 
+    $con=mysqli_connect($mysql_host,$mysql_database,$mysql_user,$mysql_password); 
+
+    // Check connection 
+    if (mysqli_connect_errno($con)) 
+    { 
+        echo "Failed to connect to MySQL: " . mysqli_connect_error(); 
+    } 
+
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
