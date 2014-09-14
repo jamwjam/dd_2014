@@ -1,7 +1,7 @@
 <?php
     $logged = false;
 
-    $link = mysqli_connect("54.68.46.233","root","root", "Daemon","3306");
+    $link = mysqli_connect("ec2-54-68-46-233.us-west-2.compute.amazonaws.com","root","root", "Daemon","3306");
     // Create a MySQL table in the selected database
     mysql_query("CREATE TABLE example(
     id INT NOT NULL AUTO_INCREMENT, 
