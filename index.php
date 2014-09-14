@@ -2,7 +2,7 @@
     $logged = false;
 
     $mysql_host = "http://ec2-54-68-46-233.us-west-2.compute.amazonaws.com/"; 
-    $mysql_database = ""Daemon"; 
+    $mysql_database = "Daemon"; 
     $mysql_user = "root"; 
     $mysql_password = "root"; 
 
