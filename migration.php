@@ -22,7 +22,7 @@
         if ($success)
         {
             $success = false;
-            $sql = "CREATE TABLE Persons 
+            $sql = "CREATE TABLE users 
                 (
                 id INT NOT NULL AUTO_INCREMENT, 
                 PRIMARY KEY(id),
@@ -31,7 +31,7 @@
                 password VARCHAR(100)
                 )";
             if (mysqli_query($con,$sql)) {
-              echo "Database created successfully";
+              echo "Table users created successfully";
                 $success = true;
             } else {
               echo "Error creating table: " . mysqli_error($con);
